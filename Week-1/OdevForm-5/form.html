@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <h2>Örnek Form</h2>
+    <form action="">
+        <!-- Metin girişi -->
+        Ad: <input type="text"> <br>
+        Soyad: <input type="text"> <br>
+        <!-- email adres girişi -->
+        E-posta: <input type="email" required> <br>
+        <!-- Parola girişi -->
+        Parola: <input type="password"> <br>
+        Doğum Tarihi: <input type="date"> <br>
+        Saat: <input type="time"> <br>
+        <!-- seçmeli radyo düğmesi  -->
+        Cinsiyet: <br>
+        <input type="radio" name="Cinsiyet">Erkek <br>
+        <input type="radio" name="Cinsiyet">Kadın <br>
+        <input type="radio" name="Cinsiyet">Belirtmek istemiyorum. <br>
+        <!-- açılır liste -->
+        Favori meyvenizi seçin:
+        <select>
+            <option value="Erik">Erik</option>
+            <option value="Çilek">Çilek</option>
+            <option value="Karpuz">Karpuz</option>
+        </select>
+        <br>
+        <br>
+        <!-- mesaj alanı:30 kolon 10 satır -->
+        Önerilerinizi yazınız: <br>
+        <textarea name="mesajInput" id="mesajAlani" cols="30" rows="10"></textarea> <br>
+        <!-- Gönderme ve silme butonu -->
+        <input type="submit" value="Kaydet">
+        <input type="reset">
+    </form>
+
+</body>
+
+</html>

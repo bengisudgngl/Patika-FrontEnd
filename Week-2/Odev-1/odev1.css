@@ -1,0 +1,54 @@
+/* class -> .text-red {} */
+/* id -> #id-bilgisi {} */
+
+body{
+    background-color:#FFEBCD;
+}
+
+.h1{
+    color: rgb(163, 72, 87);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50px;
+    text-transform:uppercase;
+}
+
+.h2{
+    color: purple;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+    font-style: normal;
+}
+
+h3{
+    color: #006400 ;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px ;
+}
+
+h4{
+    color: #800000 ;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px ;
+    font-style: italic;
+}
+
+
+p{
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+
+ul{
+    color:#191970;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    text-align: center;
+}
+
+ol{
+    color: brown;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    text-align: center;
+}

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anasayfa</title>
+    <link rel="stylesheet" href="odev1.css">
+</head>
+<body>
+
+    <!-- Navbar - Start -->
+    <header>
+        <!-- başlık etiketi: giriş içeriğini temsil eder. Bazı başlık öğelerinin yanı sıra bir logo, arama formu, yazar adı ve diğer öğeleri de içerebilir. -->
+        <nav align="center">
+    <!-- Gezinme Bölümü öğesi: örnekleri menüler, içindekiler ve dizinlerdir. -->
+            <h1 class="h1"> Yıldız Kafe </h1>
+            <a href="anasayfa.html">Ana sayfa</a> 
+            <a href="hakkımızda.html">Hakkımızda</a> 
+            <a href="ıcecekler.html">İçecekler</a> 
+
+
+
+        </nav>
+    </header>
+    <!-- Navbar - End -->
+    <!-- Content - Start -->
+
+    <section>
+    <!-- Genel Bölüm: belgenin genel bağımsız bir bölümünü temsil eder -->
+    <!-- Article - Start -->
+        <article>
+            <!-- Makale içeriği öğesi: Örnekler şunları içerir: bir forum gönderisi, bir dergi veya gazete makalesi veya bir blog girişi, bir ürün kartı, kullanıcı tarafından gönderilen bir yorum, etkileşimli bir widget veya gadget veya başka herhangi bir bağımsız içerik öğesi. -->
+            <h2 class="h2">Anasayfa</h2>
+                <p>
+                    Yıldız Kafe'ye hoşgeldiniz :))
+                    İçeceklerimizden içip serinlemek ister misiniz?
+                    Sayfamızda dolanırken keyfinize bakın.
+                </p>
+            <div align="center">
+                    <h3 class="h3">İçecek çeşitlerimiz:</h3>
+                    <!-- <style>
+                        list-style-position
+                    </style> -->
+                    <h4>Soğuk İçecekler</h4>
+                    <ul style="list-style-position: inside">
+                        <li>Kola</li>
+                        <li>Fanta</li>
+                        <li>Furko</li>
+                        <li>Niğde Gazozu</li>
+                        <li>Ayran</li>
+                        <li>Ice Tea</li>
+                    </ul>
+                            
+                    <h4>Sıcak İçicekler</h4>
+                    <ol style="list-style-position: inside">
+                        <li>Çay</li>
+                        <li>Türk Kahvesi</li>
+                        <li>Sahlep</li>
+                        <li>Sıcak Çikolata</li>
+                    </ol>
+            </div>    
+
+
+
+        </article>
+    <!-- Article - End -->
+
+
+    </section>
+    <!-- Content - End -->
+    <!-- footer - Start -->
+    <footer>
+    <!-- Altbilgi öğesi: Genellikle bölümün yazarı, telif hakkı verileri veya ilgili belgelere bağlantılar hakkında bilgiler içerir. -->
+        <nav>
+            <h2 class="h2">Kayıt Formu</h2>
+
+            <form
+            action="/submit_form.html" method="get">
+                <!-- Text Input -->
+                <label for="fname">Ad:</label><br>
+                <input type="text" id="fname" name="fname" required><br>
+
+                <label for="lname">Soyad:</label><br>
+                <input type="text" id="lname" name="lname" required><br>
+
+                <!-- Email Input -->
+                <label for="email">E-posta:</label><br>
+                <input type="email" id="email" name="email" required><br>
+
+                <!-- Password Input -->
+                <label for="pwd">Şifre:</label><br>
+                <input type="password" id="pwd" name="pwd" minlength="8" required><br>
+
+                <!-- Date Input -->
+                <label for="dob">Doğum tarihi:</label><br>
+                <input type="date" id="dob" name="dob" required><br>
+
+                <!-- Radio Button Input -->
+                <p>Cinsiyet:</p>
+                <input type="radio" id="male" name="gender" value="male" required>
+                <label for="male">Erkek</label><br>
+                <input type="radio" id="female" name="gender" value="female" required>
+                <label for="female">Kadın</label><br>
+
+                <br>
+
+                <!-- Checkbox Input -->
+                <input type="checkbox" id="terms" name="terms" required>
+                <label for="terms">Kullanım şartlarını kabul ediyorum.</label><br>
+
+                <br>
+
+                <!-- Textarea Input -->
+                <label for="message">Önerileriniz varsa bizimle paylaşır mısınız?</label><br>
+                <textarea id="message" name="message" rows="4" cols="50"></textarea><br>
+
+                <!-- Select Input -->
+                <label for="country">Ülke:</label><br>
+                <select id="country" name="country">
+                    <option value="turkey">Türkiye</option>
+                    <option value="usa">ABD</option>
+                    <option value="germany">Almanya</option>
+                </select><br>
+
+                <!-- Submit Button -->
+                <input type="submit" value="Gönder">
+                <!-- Reset Button -->
+                <input type="reset">
+
+            </form>
+
+        <h2 class="h2">İletişim</h2>
+            <a href="mailto:bengisudoganoglu2011@hotmail.com">Mail atabilirsiniz.</a> <br>
+            <a href="tel:054444444">Telefonla sipariş.</a> <br>
+            <address>
+                Adres: Lorem ipsum dolor sit amet.
+            </address> <br>
+
+        </nav>
+        <p>Telif Hakkı © 2024 Yıldız Kafe</p>
+    </footer>
+    <!-- footer - End --> 
+</body>
+</html>
