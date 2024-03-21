@@ -6,15 +6,16 @@
   font-family: arial,sans-serif;
   font-size: 13px;
 }
+.header li{
+  float: right;
+}
 
 .headerli a {
-  display: block;
   color: black;
-  text-align: center;
   padding: 5px 5px;
   text-decoration: none;
 }
-
+/* mouse ile üzerine gelince değişen efekt:hover */
 .headerli a:hover {
   text-decoration: underline;
 }
@@ -34,6 +35,8 @@
   margin: 0 auto;
   margin-top: -77px;
   width: 582px;
+  /* kenarları yuvarlak yapar */
+  border-radius: 15px; 
 }
 
 .search-area:hover {
@@ -84,7 +87,8 @@ box-shadow: 0 2px 3px 0 rgba(0,0,0,0.24), 0 2px 5px 0 rgba(0,0,0,0.19);
 .input {
   margin: 0;
   padding: 0;
-  /* width: 480px; */
+  /* yazı alanı 480 px */
+  width: 480px;
   color: rgba(0, 0, 0, 0.87);
   word-wrap: break-word;
   outline: none;
@@ -103,20 +107,40 @@ box-shadow: 0 2px 3px 0 rgba(0,0,0,0.24), 0 2px 5px 0 rgba(0,0,0,0.19);
   text-align: start;
   appearance: textfield;
   cursor: text;
+  /* border: kenarlığı kaldırmak için */
+  border: 0cm;
 }
 .buttons {
   display: flex;
-  justify-content: center;
+  /* butonları ortalar */
+  justify-content:center;
 }
+
+/* Buttonları ortaya alıp üstünden ve sağından boşluklar veriniz. Button kenarları 1px kalın #f2f2f2 renginde olmalı. Yazı tipi Arial, yazı rengi #5f6368, yazı boyutu 14px olmalı. Button yüksekliği 36px olmalı. */
 
 .googlesearch {
   margin: 11px 4px;
   padding: 0 16px;
   line-height: 27px;
   min-width: 54px;
+  /* buton içindeki yazıyı ortalamak */
   text-align: center;
   cursor: pointer;
   user-select: none;
+  /* search kısmında kenarlıkları kaldırır */
+  border: 1px;
+  /* buton kenar rengi */
+  border-color: #f2f2f2 ;
+  /* kenarlarının stilini belirtmek için kullanılır. */
+  /* border-style: dashed;----kenarı kesikli çizgi yapar  */
+  border-style: solid;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #5f6368;
+  font-size: 14px;
+  /* buton yüksekliği */
+  height: 36px;
+  /* buton arka planındaki gölge ayarı */
+  box-shadow: 0 2px 3px 0 rgba(0,0,0,0.24), 0 2px 5px 0 rgba(0,0,0,0.19);
 }
 
 .feelinglucky {
@@ -127,6 +151,17 @@ box-shadow: 0 2px 3px 0 rgba(0,0,0,0.24), 0 2px 5px 0 rgba(0,0,0,0.19);
   text-align: center;
   cursor: pointer;
   user-select: none;
+  border: 1px;
+  border-color: #f2f2f2 ;
+  border-style: solid;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #5f6368;
+  font-size: 14px;
+  height: 36px;
+  box-shadow: 0 2px 3px 0 rgba(0,0,0,0.24), 0 2px 5px 0 rgba(0,0,0,0.19);
+}
+.feelinglucky:hover{
+  box-shadow: 0 2px 3px 0 rgba(0,0,0,0.24), 0 2px 5px 0 rgba(0,0,0,0.19);
 }
 
 .footer {
@@ -140,7 +175,10 @@ box-shadow: 0 2px 3px 0 rgba(0,0,0,0.24), 0 2px 5px 0 rgba(0,0,0,0.19);
   width: 100%;
   margin-left: -8px;
   line-height: 10px;
+  /* liste elemanı:üzerindeki noktaları kaldırır */
   list-style-type: none;
+  /* en alt kısmın arka plan rengi */
+  background-color: #f2f2f2 ;
 }
 
 .footerli {

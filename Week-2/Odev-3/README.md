@@ -1,1 +1,1 @@
-![google](assets/image.png)
+![google](assets/güncel.jpeg)
