@@ -1,0 +1,101 @@
+/* sayfa kenarında var sayılarak gelen boşluk 0 */
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #164863;
+}
+
+h2 {
+    text-align: center;
+    color: #1B1A55;
+}
+
+p{
+    text-align: center;
+    color: #1B1A55;
+    font-weight: bold;
+}
+
+.nav{
+    background-color: #9BBEC8;
+    /* liste elemanlarının işaretini kaldırır */
+    list-style-type: none;
+    text-align: right;
+    margin: 0;
+    padding: 0;
+    border: 2px solid black;
+    height: 130px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.nav li:first-child{
+    padding: 0px;
+    margin-top: -75px;
+}
+
+.nav li{
+    /* bütün listeleri tek satıra alır */
+    display: inline-block;
+    /* liste elemanlarının arasını açar */
+    padding: 20px;
+    height: 20px;
+}
+.gallery-content img{
+    /* display: inline-block; */
+    width: 100%;
+    aspect-ratio: 4 / 3; 
+    /* margin-left: 50px; */
+    /* padding: 10px; */
+}
+.box{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap: 1rem;
+}
+.gallery-title{
+            margin-bottom: 20px;
+            padding: 0;
+}
+.gallery-content{
+    /* display: flex;
+    grid-template-columns: repeat(3, 1fr); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.about-content,.contact-content,.gallery-content{
+    background-color: #FFEBEB; 
+    margin: 20px auto; 
+    width: 80%; 
+    padding: 30px;
+    /* Daire şeklinde kenarlık eklemek için */
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); /* Çok hafif bir gölge */
+    margin-left: 110px;
+    margin-right: 50px;
+    flex: auto; 
+}
+
+.puzzle{
+    width: "100%";
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Her kutuya en az 300px genişlik verir ve ekran boyutuna göre otomatik olarak sığdırır */
+    gap: 10px;
+}
+.madde{
+    width: 100%;
+    /* height: 400px; */
+    aspect-ratio: 4 / 3;
+} 
+footer {
+    background-color: #9BBEC8; 
+    color: #333;
+    text-align: center;
+    padding: 10px;
+}
