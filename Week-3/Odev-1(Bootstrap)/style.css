@@ -1,0 +1,28 @@
+body{
+    background-color: #E9ECEF;
+}
+h2{
+  color: #5F264A;
+}
+
+footer {
+  background-color: li; /* Açık gri renk */
+  padding: 20px;
+  text-align: center;
+}
+footer h2 {
+  margin-bottom: 10px;
+}
+footer a {
+  color: #000; /* Link rengi siyah */
+  text-decoration: none; /* Link altı çizgisi kaldırıldı */
+}
+footer a:hover {
+  text-decoration: underline; /* Link üzerine gelindiğinde altı çizili hale getirilir */
+}
+footer address {
+  font-style: normal; /* Adresin normal yazı stiline dönüşmesi */
+}
+footer p {
+  margin-top: 10px;
+}
