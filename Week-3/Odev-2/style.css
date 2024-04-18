@@ -5,6 +5,7 @@ body{
 /* navbar height 54px ayarlandı */
 nav{
       height: 54px;
+      position: sticky;
 }
 .logo{
       margin-left: 192px;
